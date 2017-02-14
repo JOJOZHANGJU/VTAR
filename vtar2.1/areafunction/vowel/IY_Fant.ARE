@@ -1,0 +1,23 @@
+[Iy, from fant book 
+  any comments are here
+  Category Selection:
+            1 - 'Vowel'
+            2 - 'Consonant'
+            3 - 'Nasal'
+            4 - '/r/'
+            5 - '/l/'
+            6 - 'Nasalized vowel'
+            7 - 'Nasals with sinus'
+]
+
+Category_Selection: 1
+Model_Selection: 1
+
+
+[1]   Vowel
+34
+0.5
+    2.9000    2.3000    2.0000    5.0000    8.0000    9.2500   10.5000   10.5000   10.5000
+   10.5000   10.5000   10.5000   10.5000   10.5000   10.5000    9.2500    8.0000    7.2500
+    5.2500    3.3000    1.9500    0.9750    0.6500    0.6500    0.6500    0.6500    0.6500
+    0.6500    0.8250    1.1500    1.4500    2.4000    3.6000    4.0000

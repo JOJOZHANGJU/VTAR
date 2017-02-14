@@ -1,0 +1,60 @@
+% GEOMETRY CONFIGURATION  OF ARBITRARY TYPE
+%
+%  geometry configuration is as a tree structure with its root at the tube starting  from glottis. 
+%  The air flow comes out from nostril and/or lips. It can not model the geometry with tube loops
+%  
+%   File format
+%   1. Comments line start with % 
+%   
+%   2. First line is for mode of sound which determines the output will be from LIPS or NOSTRIL
+%    <Mode> Oral/Nasal/OralNasal
+%  
+%   3.  each tube will have 9 fields to fill  as following,
+%  !!!!!!!!!!!!  please keep <fieldname> even though there is no data needed
+%  !!!!!!!!!!!!  each field only occupy one line
+%
+% 	 <indexOfBranch>  1-30
+% 	 <typeOfModule> TWOCHANNELS or  SINGLECHANNEL (default)
+%	 <typeOfStartofTube> GLOTTIS/INTERMEDIATE or just empty (default)
+%	 <typeOfEndofTube>   LIPS/NOSTRIL1/NONSTRIL2/ or just empty(default)
+%	 <nextBranches> 1 2 3 (maximum number of braches is 10)
+%	 <nextBranchesLocation>    Location value /CHANNEL1 Location value/CHANNEL2 Location value/ or END(default)
+% 	 <numOfSections> 
+%	 <secLen> 
+%	 <secArea>
+% 
+%	if <typeOfModule> is TWOCHANNELS , 3 more lines on data for channel 2
+%
+% 	 <numOfSections> 
+%	 <secLen> 
+%	 <secArea>
+%
+%
+%
+%
+%
+
+<Mode> Oral
+
+% main cavity
+<indexOfBranch>  1
+	<typeOfStartofTube> GLOTTIS
+	<typeOfEndofTube>  LIPS
+	<nextBranches>  2
+	<nextBranchesLocation> 15
+	<typeOfModule> 
+	<numOfSections> 63
+	<secLen>    0.3315        0.31      0.3334      0.3895      0.3448      0.4017      0.4095       0.386      0.3877      0.3428      0.3206      0.3103       0.313      0.3155      0.3142      0.3161      0.2983       0.295      0.2935      0.2889       0.297      0.2887      0.2851      0.2763      0.3168      0.3093      0.3206       0.297      0.3122      0.2952      0.3464      0.2913      0.2736      0.2621      0.2731      0.2676      0.2596      0.2557      0.2563      0.2648      0.2837      0.3004      0.3315      0.3727      0.4069      0.4376      0.4201      0.3808      0.3614      0.3398      0.3276      0.3571      0.3185      0.3187      0.2954      0.3186      0.3788      0.3188      0.2997      0.4969       0.366      0.3185      0.2641 
+	<secArea>   0.1394       0.5673       1.3961       1.2982       1.2693       1.1826       1.8033       3.0501       3.6793       3.8429       3.0485       1.9891       1.1985       1.0619       0.9758       0.8681       0.8932       1.6391       1.9151       1.8805       2.0212       1.8659       2.1146       2.3719       2.4043       2.7111       3.0145       2.5663       2.4233       2.4907       2.9433       3.7533       3.0215       2.8985       2.8191       2.8445       2.9671       3.0926       3.2915       3.5624       3.3448       2.9837       2.0234       1.3757       0.5975       0.3475       0.4854       1.0409       1.8439       3.5037       5.1408       7.9342      10.1755      11.1996       9.7899       9.4075       8.2989       5.5045       4.5058       2.9471       1.9119       1.4126       1.8179 
+
+% sublingual cavity	, may not reasonable data, just for this example
+<indexOfBranch>  2
+	<typeOfStartofTube> 
+	<typeOfEndofTube> 
+	<nextBranches>  
+	<nextBranchesLocation> 
+	<typeOfModule> 
+	<numOfSections> 1
+	<secLen>    1
+	<secArea>   1
+	

@@ -1,0 +1,34 @@
+% a function should be able to take
+function [f, AR] = vtar_calc( Len1, Area1, rad, Fupper, df )
+
+if( nargin<3 ), 
+    rad = 1 ; 
+end
+
+if( nargin<4 ), 
+    Fupper = 6000 ; 
+end
+
+if( nargin<5 ),
+    df = 10 ; 
+end
+
+VT = vtar_init ;
+
+VT.df     = df ; 
+VT.Fupper = Fupper ; 
+if(rad==1)
+    VT.Radiation_Load = 'on' ;
+else
+    VT.Radiation_Load = 'off' ;
+end
+
+
+VT.Vowel.Geometry.Area = Area1(1:length(Len1)) ; %ones(1,17*1)*1 ;
+VT.Vowel.Geometry.DL =  Len1(1:end) ; % ones(1,17*1)*1/1;
+
+VT = get_acousticResponse1(VT, 2, 0) ; % 2, 0 are fixed in the fucntion
+
+f  = VT.f ; 
+AR = VT.AR ; 
+return ;

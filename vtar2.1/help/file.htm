@@ -1,0 +1,132 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 2</title>
+</head>
+
+<body>
+
+<p class="MsoNormal" style="text-indent: in; margin-left: 0in; line-height:200%">
+<font size="4" color="#FF0000"><b>Input from file<a name="input"></a></b></font></p>
+
+<p class="MsoNormal" style="text-indent: in; line-height:200%" align="left">
+The area function can also be loaded from file.&nbsp; In the input file, users 
+specify sound category, vocal tract geometry configuration, number of sections 
+and corresponding area functions, and other related information.&nbsp; Sample input files are given below:</p>
+
+  <ul>
+  <li>
+
+<p class="MsoNormal" align="left">Area function (.ARE) for 
+<a href="model.htm#modify_area">one section</a> (see<a href="matlab: global VT ; edit(fullfile(VT.vtarPath,'areafunction', 'template1.are'));"> 
+/vtar/areafunction/template1.are</a>)</p>
+
+  </li>
+  <li>
+
+<p class="MsoNormal" align="left">Area function (.ARE) for 
+<a href="model.htm#model_selection">one sound</a> (see<a href="matlab: global VT ; edit(fullfile(VT.vtarPath,'areafunction', 'template2.are'));"> 
+  /vtar/areafunction/template2.are</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+<a href="model.htm#vowel">Vowel</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see example
+<a href="matlab:  global  VT  ;  edit(fullfile(VT.vtarPath,'areafunction','vowel',  'EY.ARE'));">&nbsp;/vtar/areafunction/vowel/EY.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+<a href="model.htm#consonant">Fricative</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see example
+<a href="matlab:  global  VT  ;  edit(fullfile(VT.vtarPath,'areafunction',  'consonant',  'Example_1.ARE'));">&nbsp;/vtar/areafunction/consonant/Example_1.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+<a href="model.htm#nasals">Nasal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see example
+<a href="matlab:  global  VT  ;  edit(fullfile(VT.vtarPath,'areafunction',  'nasal',  'M.ARE'));">&nbsp;/vtar/areafunction/nasal/M.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+<a href="model.htm#rhotic">Rhotic /r/ </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (see 
+example
+<a href="matlab:  global  VT  ;  edit(fullfile(VT.vtarPath,'areafunction',  '_r',  'Example_1.ARE'));">&nbsp;/vtar/areafunction/_l/Example_1.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+<a href="model.htm#lateral">Lateral /l/</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see example
+<a href="matlab:  global  VT  ;  edit(fullfile(VT.vtarPath,'areafunction',  '_l',  'Example_1.ARE'));">&nbsp;/vtar/areafunction/_r/Example_1.ARE</a>)</li>
+</ul>
+
+  <p class="MsoNormal" style="text-indent: 0in; line-height: 200%; margin-left: in">
+  VTAR also allows input of area function for<a href="model.htm#arbitrary"> arbitrary</a> 
+  vocal tract geometry. Samples of arbitrary vocal tract area function input 
+  file are given below:<a name="arbitrary"></a><ul>
+  <li>
+  <p class="MsoNormal" style="text-indent: 0in; line-height: 150%; margin-left: in">
+  Arbitrary area function input file (<a href="matlab: global VT ; edit(fullfile(VT.vtarPath,'areafunction', 'template3.are'));">/vtar/areafunction/template3.are</a> 
+  )</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+Example of arbitrary area function input file for
+<a href="model.htm#vowel">Vowel</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see&nbsp;
+<a href="matlab:  global  VT  ;  edit(fullfile(VT.vtarPath,'areafunction','arbitrary',  'vowel.ARE'));">&nbsp;/vtar/areafunction/arbitrary/vowel.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+Example of arbitrary area function input file for
+<a href="model.htm#nasals">Nasal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see&nbsp;
+<a href="matlab: global VT ; edit(fullfile(VT.vtarPath,'areafunction',   'arbitrary',   'M.ARE'));">&nbsp;/vtar/areafunction/arbitrary/M.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+Example of arbitrary area function input file for
+<a href="model.htm#rhotic">Rhotic /r/ </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (see 
+<a href="matlab:   global   VT   ;   edit(fullfile(VT.vtarPath,'areafunction',   'arbitrary',   'rhotic.ARE'));">&nbsp;/vtar/areafunction/arbitrary/rhotic.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+Example of arbitrary area function input file for
+<a href="model.htm#lateral">Lateral /l/</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see 
+<a href="matlab:   global   VT   ;   edit(fullfile(VT.vtarPath,'areafunction',   'arbitrary',   'lateral.ARE'));">&nbsp;/vtar/areafunction/arbitrary/lateral.ARE</a>)</li>
+</ul>
+
+  <p class="MsoNormal" style="text-indent: 0in; line-height: 150%; margin-left: in">
+  &nbsp;<p class="MsoNormal" style="text-indent: 0in; line-height: 150%; margin-left: in">
+  &nbsp;<p class="MsoNormal" style="text-indent: in; margin-left: in; line-height:200%">
+<font size="4" color="#FF0000"><b>Save and output<a name="save"></a></b></font></p>
+
+<p class="MsoNormal" style="text-indent: in; line-height:200%">
+To save the results, click the 'save' button at the bottom left of the interface 
+window, or go to menu 'file-save'. A dialog window will appear and save the 
+results in a '.mat' file.&nbsp; Specifically, the frequency and acoustic 
+response 
+are saved in VTsaved.f and VTsaved.AR, respectively.&nbsp; The result is also 
+saved in a text file with the same name.&nbsp; A sample results file is given 
+below:</p>
+
+<ul>
+  <li>
+  <p class="MsoNormal" style="text-indent: 0in; line-height: 200%; ">
+  Saved area function , acoustic response and other setting ( see /vtar/areafunction/savedexample1.mat 
+  and
+  <a href="matlab: global VT ; edit(fullfile(VT.vtarPath,'areafunction', 'savedexample1.txt'));">
+  savedexample1.txt</a> ) </li>
+</ul>
+
+<p class="MsoNormal" style="text-indent: 0in; line-height: 200%">To load the 
+results saved previously, click the 'load' button at the bottom left of the 
+interface window, or go to menu 'file-load'.</p>
+
+</body>
+
+</html>

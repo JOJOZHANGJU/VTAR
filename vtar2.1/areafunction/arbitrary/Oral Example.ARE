@@ -1,0 +1,99 @@
+% This produces a simple configuration of pharynx connected to oral and nasal cavities and the nasal common part branching out into 2 different channels.
+
+% <typeOfBranch> PharynxConnectingBranch
+% <numOfBranches> 2
+% <numOfSections> 20
+% <secLen> 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968
+% <secArea> 0.5700 0.5700 0.2100 0.5800 2.1800 3.1500 2.9600 2.8900 3.7000 4.2100 3.5700 3.5900 2.9700 3.1700 3.2500 2.5800 2.7400 2.7700 2.4900 2.9300
+
+% <typeOfBranch> OralTerminalBranch
+% <numOfBranches> 0
+% <numOfSections> 21
+% <secLen> 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968 0.3968
+% <secArea> 3.3300 2.2700 2.5700 2.1700 1.8400 1.9800 1.7300 1.4300 1.7300 2.0800 2.3200 2.8400 3.5100 4.2500 4.7900 4.6100 4.0700 3.6400 2.8400 1.4200 0.2900
+
+%  <typeOfBranch> NasalCommonConnectingBranch
+%  <numOfBranches> 2
+%  <numOfSections> 5
+%  <secLen> 0.4087 0.4087 0.4087 0.4087 0.4087
+%  <secArea> 1.0400 2.7469 3.5218 3.8678 4.3178
+
+%  <typeOfBranch> NasalLeftTerminalBranch
+%  <numOfBranches> 0
+%  <numOfSections> 21
+%  <secLen> 0.3750 0.3750 0.3750 0.3750 0.3750 0.3750 0.3750 0.3750 0.3750 0.3906 0.3906 0.3906 0.3906 0.3906 0.3906 0.3906 0.3906 0.3906 0.3906 0.3906 0.3906
+%  <secArea> 2.1411 1.7442 1.4429 1.6214 2.0820 2.5039 2.7094 2.7410 2.7453 2.9745 2.7724 3.2134 3.5136 3.4081 2.9397 2.2914 1.6614 1.1828 0.8854 0.7015 0.5147
+
+%  <typeOfBranch> NasalRightTerminalBranch
+%  <numOfBranches> 0
+%  <numOfSections> 20
+%  <secLen> 0.4063 0.4063 0.4063 0.4063 0.4063 0.4063 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018
+%  <secArea> 1.6855 1.8696 1.4279 1.7885 1.9956 1.8020 2.1062 1.6411 1.7167 1.8411 1.8221 1.6506 1.4076 1.1931 1.0769 1.0719 1.1303 1.1608 1.0696 0.8221
+
+
+% new formant
+
+% single channel
+% <indexOfBranch>  1-1000 
+% <typeOfModule> SINGLECHANNEL/TWOCHANNEL
+% <typeOfStartofTube> GLOTTIS/INTERMEDIATE or just empty
+% <typeOfEndofTube>   LIPS/NOSTRIL1/NONSTRIL2/INTERMEDIATE or just empty
+% <nextBranches> 1 2 3 
+% <nextBranchesLocation> anynumberLessThanLength/END/HALF/THIRD/TWOTHIRDS
+% <numOfSections> 20
+% <secLen> 0.4063 0.4063 0.4063 0.4063 0.4063 0.4063 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018
+% <secArea> 1.6855 1.8696 1.4279 1.7885 1.9956 1.8020 2.1062 1.6411 1.7167 1.8411 1.8221 1.6506 1.4076 1.1931 1.0769 1.0719 1.1303 1.1608 1.0696 0.8221
+% if two channel , 3 more lines on data 
+% <numOfSections> 20
+% <secLen> 0.4063 0.4063 0.4063 0.4063 0.4063 0.4063 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018 0.4018
+% <secArea> 1.6855 1.8696 1.4279 1.7885 1.9956 1.8020 2.1062 1.6411 1.7167 1.8411 1.8221 1.6506 1.4076 1.1931 1.0769 1.0719 1.1303 1.1608 1.0696 0.8221
+
+
+<Mode> Oral
+
+% <indexOfBranch>  1
+% 	<typeOfStartofTube> GLOTTIS
+% 	<typeOfEndofTube>  LIPS  
+% 	<nextBranches>  
+% 	<nextBranchesLocation> 
+% 	<typeOfModule> SINGLECHANNEL
+% 	<numOfSections> 18
+% 	<secLen> 1  1   1  1   1    1  1   1  1   1  1  1  1  1   1  1   1   1    
+% 	<secArea> 2.56  1.44  8.0    7.0  5.0  1.4  1.65  1.4  2.3  2.56 4.0    5.67  7.84  10.3  10.3  10.3  8.0   4.0
+% 
+
+
+<indexOfBranch>  1
+	<typeOfStartofTube> GLOTTIS
+	<typeOfEndofTube>   
+	<nextBranches>  2
+	<nextBranchesLocation> 
+	<typeOfModule> SINGLECHANNEL
+	<numOfSections> 5
+	<secLen> 1  1   1  1   1   
+	<secArea> 2.56  1.44  8.0    7.0  5.0 
+
+<indexOfBranch>  2
+	<typeOfStartofTube> 
+	<typeOfEndofTube>     
+	<nextBranches> 3
+	<nextBranchesLocation> 
+	<typeOfModule> SINGLECHANNEL
+	<numOfSections> 6
+	<secLen> 1  1   1  1   1   1 
+	<secArea>    1.4  1.65  1.4  2.3  2.56 4.0   
+
+<indexOfBranch>  3
+	<typeOfStartofTube> 
+	<typeOfEndofTube>  LIPS   
+	<nextBranches>  
+	<nextBranchesLocation> 
+	<typeOfModule> SINGLECHANNEL
+	<numOfSections>  7
+	<secLen> 1  1   1  1   1  1  1   
+	<secArea> 5.67  7.84  10.3  10.3  10.3  8.0   4.0
+
+%	<numOfSections> 17
+%	% <secLen> 1  1   1   1   1   1  1   1   1   1   1   1   1   1   1   1  1
+%	<secArea> 6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  6  
+        

@@ -1,0 +1,21 @@
+[ ey, 
+  any comments are here
+  Category Selection:
+            1 - 'Vowel'
+            2 - 'Consonant'
+            3 - 'Nasal'
+            4 - '/r/'
+            5 - '/l/'
+            6 - 'Nasalized vowel'
+            7 - 'Nasals with sinus'
+]
+
+Category_Selection: 1
+Model_Selection: 1
+
+
+[1]   Vowel
+16
+1.0
+2.3  1.4  7.1  8.2  10.5  10.5  10.5  8.0  5.5  4.5
+3.4  1.7  1.5  3.3   5.0   5.5

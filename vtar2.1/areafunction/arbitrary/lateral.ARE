@@ -1,0 +1,90 @@
+% GEOMETRY CONFIGURATION  OF ARBITRARY TYPE
+%
+%  geometry configuration is as a tree structure with its root at the tube starting  from glottis. 
+%  The air flow comes out from nostril and/or lips. It can not model the geometry with tube loops
+%  
+%   File format
+%   1. Comments line start with % 
+%   
+%   2. First line is for mode of sound which determines the output will be from LIPS or NOSTRIL
+%    <Mode> Oral/Nasal/OralNasal
+%  
+%   3.  each tube will have 9 fields to fill  as following,
+%  !!!!!!!!!!!!  please keep <fieldname> even though there is no data needed
+%  !!!!!!!!!!!!  each field only occupy one line
+%
+% 	 <indexOfBranch>  1-30
+% 	 <typeOfModule> TWOCHANNELS or  SINGLECHANNEL (default)
+%	 <typeOfStartofTube> GLOTTIS/INTERMEDIATE or just empty (default)
+%	 <typeOfEndofTube>   LIPS/NOSTRIL1/NONSTRIL2/ or just empty(default)
+%	 <nextBranches> 1 2 3 (maximum number of braches is 10)
+%	 <nextBranchesLocation>    Location value /CHANNEL1 Location value/CHANNEL2 Location value/ or END(default)
+% 	 <numOfSections> 
+%	 <secLen> 
+%	 <secArea>
+% 
+%	if <typeOfModule> is TWOCHANNELS , 3 more lines on data for channel 2
+%
+% 	 <numOfSections> 
+%	 <secLen> 
+%	 <secArea>
+%
+%
+%
+%
+%
+
+
+<Mode> Oral
+
+% back cavity
+<indexOfBranch>  1
+	<typeOfStartofTube> GLOTTIS
+	<typeOfEndofTube>  
+	<nextBranches> 2  3  
+	<nextBranchesLocation>  
+	<typeOfModule> 
+	<numOfSections> 36 
+	<secLen>  0.3         0.3         0.4         0.3         0.3         0.4         0.4         0.3         0.4         0.3         0.3         0.3         0.4         0.3         0.3         0.4         0.3         0.3         0.3         0.3         0.3         0.4         0.3         0.3         0.3         0.4         0.4         0.3         0.4         0.3         0.3         0.3         0.3         0.3         0.3         0.3    
+	<secArea>  0.201       0.396       0.786       0.773       0.984       1.418       1.994       2.373       2.451       4.169        3.58       2.239        1.33       0.893       0.632       0.558       0.371       0.317       0.601       0.555       0.538       0.462       0.363       0.408       0.522       0.738       0.863       0.546       0.282       0.331       1.708       2.403       2.931       3.121        3.63       4.727  
+         
+
+% 2 lateral channels
+<indexOfBranch>  2
+	<typeOfStartofTube> 
+	<typeOfEndofTube>  
+	<nextBranches>  4
+	<nextBranchesLocation> 
+	<typeOfModule> TWOCHANNELS
+	% channel 1
+	<numOfSections> 24
+	<secLen>    0.3         0.2         0.3         0.2         0.3         0.3         0.2         0.3         0.3         0.2         0.3         0.3         0.2         0.3         0.3         0.3         0.3         0.3         0.3         0.3         0.3         0.2         0.3         0.2 
+	<secArea>   0.423       1.071       0.673       1.144       0.857       0.911       1.511       0.245       0.243        0.96       1.486       1.348       1.825       2.002       1.735       1.276       1.184       1.198       1.114       0.314        0.29       0.126       0.038       0.988  
+	% channel 2
+	<numOfSections>  24
+	<secLen>    0.3         0.2         0.3         0.2         0.3         0.3         0.2         0.3         0.3         0.2         0.3         0.3         0.2         0.3         0.3         0.3         0.3         0.3         0.3         0.3         0.3         0.2         0.3         0.2  
+	<secArea>   0.107       0.713       0.625       1.022       0.937       0.886       1.063       0.553       0.878       1.049       1.415       1.451       1.515       1.513       1.707       1.094         0.9       0.932       0.846       0.408       0.375       0.269       0.286       0.652 
+ 
+% supralingual cavity
+<indexOfBranch>  3
+	<typeOfStartofTube> 
+	<typeOfEndofTube>  
+	<nextBranches>  
+	<nextBranchesLocation> 
+	<typeOfModule> 
+	<numOfSections>  24
+	<secLen>   0.3         0.2         0.3         0.2         0.3         0.3         0.2         0.3         0.3         0.2         0.3         0.3         0.2         0.3         0.3         0.3         0.3         0.3         0.3         0.3         0.3         0.2         0.3         0.2    
+	<secArea>  5.044       5.433       6.861       6.695       6.594       6.862       7.245       6.818       6.478       7.219       6.023       5.862       5.346        4.29       3.602       2.812       1.877       1.164       0.649        0.01        0.01        0.01        0.01        0.01   
+                
+        
+% front cavity
+<indexOfBranch>  4
+	<typeOfStartofTube>
+	<typeOfEndofTube>  LIPS
+	<nextBranches>  
+	<nextBranchesLocation> 
+	<typeOfModule> 
+	<numOfSections>  2
+	<secLen>   0.3         0.2    
+	<secArea>    1.906       2.135   
+

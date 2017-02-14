@@ -1,0 +1,459 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="File-List" href="model_files/filelist.xml">
+<title>New Page 2</title>
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<![endif]--><!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+</head>
+
+<body>
+
+<p><b><font color="#FF0000" size="4">Vocal tract models and area function 
+settings</font></b></p>
+<p>&nbsp;</p>
+<p>The vocal tract is modeled as a concatenation of axial sections (or tubes) 
+along the vocal tract. VTAR uses vocal tract cross-sectional area function as 
+input for the calculation of the vocal tract acoustic response. The acoustic 
+response is defined as the ratio between the output volume velocity and the 
+glottal volume velocity. For fricative sounds, the acoustic response is defined 
+as the ratio between the output 
+volume velocity and the pressure source amplitude.</p>
+<p>The area function specifies the length and cross-sectional area of each 
+section in the physical order from the glottis to the lips.&nbsp; VTAR allows 
+input of area function for vocal tract models of:</p>
+<ul>
+  <li>
+  <p style="line-height: 150%"><a href="#vowel">Vowel</a></li>
+  <li>
+  <p style="line-height: 150%"><a href="#consonant">Consonant</a></li>
+  <li>
+  <p style="line-height: 150%"><a href="#nasals">Nasals</a></li>
+  <li>
+  <p style="line-height: 150%"><a href="#rhotic">Rhotic /r/</a></li>
+  <li>
+  <p style="line-height: 150%"><a href="#lateral">Lateral /l/</a></li>
+  <li>
+  <p style="line-height: 150%"><a href="#nasalized">Nasalized vowel</a></li>
+  <li>
+  <p style="line-height: 150%"><a href="#arbitrary">Arbitrary</a></li>
+</ul>
+<p><b>Category selection</b>: Choose the desired sound category from the 
+'Category' popup menu:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="model.23.gif" width="305" height="351">&nbsp;&nbsp; </p>
+<p><b>Model selection<a name="model_selection"></a>:</b> For each selected 
+category<b>, </b>different area function input methods are available.&nbsp; The 
+area function can also be directly loaded <a href="file.htm">From file</a>.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="model.24.gif" width="304" height="349"></p>
+<p><b>Generic area function</b> : Sample area functions are available for each 
+selected category.&nbsp; These sample area functions can be used as a starting 
+area function and the users can modify it to fit their own use.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="model.25.gif" width="305" height="350"></p>
+<p><b>&nbsp;Modifying data<a name="modify_area"></a></b>: User can modify an existing area function by changing 
+both length and area data directly in the corresponding text boxes. Right-click mouse allows user to insert or delete one subsection, clear all the data 
+in this section , or load data <a href="file.htm">&nbsp;from file</a> for this 
+section.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="model.26.gif" width="307" height="349"></p>
+<p><b>Start Calculation</b>:  To 
+calculate acoustic response, press button&nbsp;
+<img border="0" src="overvi14.gif" width="29" height="31"> at toolbar&nbsp; or 
+button <img border="0" src="overvi18.gif" width="63" height="24"> at the bottom 
+of interface</p>
+<p>&nbsp;</p>
+<p style="line-height: 150%"><b><font size="5">Vocal tract models</font></b></p>
+<p style="line-height: 150%"><b>Vowel<a name="vowel"></a></b></p>
+<p style="line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp; The area function can be 
+inputted using 1-tube, 2-tube, 3-tube, or 4-tube models. For area functions of 
+more than 4 tubes (or sections) use 'Arbitraty', which allows up to 200 subsections.&nbsp; 
+The acoustic response in this case is defined as the ratio between the lip 
+volume velocity and the glottal volume velocity.</p>
+<p><span style="font-size: 12.0pt; font-family: Times New Roman"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_s1025" type="#_x0000_t75" style='width:655.5pt;
+ height:474.75pt'>
+ <v:imagedata src="model_files/image001.png" o:title="&#35056;&#30714;&#4800;&#30709;&#65535;&#65535;&#2743;&#30710;&#59041;&#30695;"
+  cropbottom="2258f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=874 height=633
+src="model_files/image002.jpg" v:shapes="_x0000_s1025"><![endif]></span></p>
+<p style="line-height: 150%">&nbsp;</p>
+<p style="line-height: 150%"><b>Consonant<a name="consonant"></a></b></p>
+<p style="line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp; Only fricative sound is 
+included, and the noise source is modeled as a pressure source. Area function 
+input is similar to Vowel sounds. The constriction location can be specified by 
+its distance from the glottis.&nbsp; <b>The value of 
+constriction location can not be 0 or greater than the length of vocal tract</b>.&nbsp;&nbsp;If 
+the constriction location is not specified, the location of minimum area 
+function is used. The acoustic response in this case is defined as the ratio 
+between the lip volume velocity and the pressure source amplitude.</p>
+<p><span style="font-size: 12.0pt; font-family: Times New Roman"><!--[if gte vml 1]><v:shape
+ id="_x0000_s1035" type="#_x0000_t75" style='width:655.5pt;height:474.75pt'>
+ <v:imagedata src="model_files/image003.png" o:title="" cropbottom="2258f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=874 height=633
+src="model_files/image004.jpg" v:shapes="_x0000_s1035"><![endif]></span></p>
+<p>&nbsp;</p>
+<p style="line-height: 150%">&nbsp;</p>
+<p style="line-height: 150%"><b>Nasals<a name="nasals"></a></b></p>
+<p style="line-height: 150%; margin-left: -4">The geometry for nasal sound 
+consists of (as shown in the schematic plot):</p>
+<ul>
+  <li>
+  <p style="margin-left: -4">&nbsp;Back cavity</li>
+  <li>
+  <p style="margin-left: -4">Oral cavity</li>
+  <li>
+  <p style="margin-left: -4">Velar tube</li>
+  <li>
+  <p style="margin-left: -4">Nostril1</li>
+  <li>
+  <p style="margin-left: -4">Nostril2&nbsp; </li>
+</ul>
+<p style="margin-left: -4; margin-top: -5">User can edit area function data for 
+each part , by selecting the popmenu list as shown in the following figure.</p>
+<p style="margin-left: -4; margin-top: -5"><b>Number of&nbsp; Nostril(s) 
+
+</b>:&nbsp; If&nbsp; <b>Number of&nbsp; Nostril(s)</b> = 
+
+1,&nbsp; only area function in plot Nostril<sub>1</sub> used for calculation</p>
+<p style="margin-left: -4; margin-top: -5"><b>Couple Area </b>:&nbsp;this data 
+is unused for calculation right now.</p>
+<p><span style="font-size: 12.0pt; font-family: Times New Roman"><!--[if gte vml 1]><v:shape
+ id="_x0000_s1028" type="#_x0000_t75" style='width:657pt;height:474pt'>
+ <v:imagedata src="model_files/image005.png" o:title="" cropbottom="2258f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=876 height=632
+src="model_files/image006.jpg" v:shapes="_x0000_s1028"><![endif]></span></p>
+<p>&nbsp;</p>
+<p style="line-height: 150%"><b>Rhotic /r/ <a name="rhotic"></a></b></p>
+<p style="line-height: 150%; margin-left: -4">The geometry for rhotic sound 
+consists of (as shown in the schematic plot):</p>
+<p style="line-height: 150%; margin-left: -4">(Model 1)</p>
+<ul>
+  <li>
+  <p style="margin-left: -4">&nbsp;Back cavity</li>
+  <li>
+  <p style="margin-left: -4">&nbsp;Front cavity</li>
+  <li>
+  <p style="margin-left: -4">Sublingual cavity&nbsp; </li>
+</ul>
+<p style="margin-left: -4">or, (Model 2)</p>
+<ul>
+  <li>
+  <p style="margin-left: -4">&nbsp;Front cavity</li>
+  <li>
+  <p style="margin-left: -4">Sublingual cavity </li>
+</ul>
+<p style="margin-left: -4; margin-top: -5">User can edit area function data for 
+each part , by selecting the popmenu list as shown in the following figures.</p>
+<p style="margin-left: -4">Essentially, these 2 models are the same, the only 
+difference is how to input the area function. Back cavity and front cavity in 
+model 1 are combined into main cavity in model 2, and users need to input the 
+location of sublingual cavity. </p>
+<p style="margin-left: -4"><b>Sublingual cavity On/Off</b>:&nbsp; If&nbsp; Off 
+is selected, sublingual cavity will not be included in the calculation of 
+acoustic response</p>
+<p style="margin-left: -4"><b>Model 1</b></p>
+<p><span style="font-size: 12.0pt; font-family: Times New Roman"><!--[if gte vml 1]><v:shape
+ id="_x0000_s1031" type="#_x0000_t75" style='width:655.5pt;height:474.75pt'>
+ <v:imagedata src="model_files/image007.png" o:title="" cropbottom="2258f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=874 height=633
+src="model_files/image008.jpg" v:shapes="_x0000_s1031"><![endif]></span></p>
+<p>&nbsp;</p>
+<p><b><font face="Times New Roman">Model 2</font></b></p>
+<p><span style="font-size: 12.0pt; font-family: Times New Roman"><!--[if gte vml 1]><v:shape
+ id="_x0000_s1032" type="#_x0000_t75" style='width:655.5pt;height:474.75pt'>
+ <v:imagedata src="model_files/image009.png" o:title="" cropbottom="2258f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=874 height=633
+src="model_files/image010.jpg" v:shapes="_x0000_s1032"><![endif]></span></p>
+<p>&nbsp;</p>
+<p style="line-height: 150%"><b>Lateral /l/<a name="lateral"></a></b></p>
+<p style="line-height: 150%; margin-left: -4">The geometry for lateral sound 
+consists of (as shown in the schematic plot):</p>
+<ul>
+  <li>
+  <p style="margin-left: -4">&nbsp;Back cavity</li>
+  <li>
+  <p style="margin-left: -4">&nbsp;Front cavity</li>
+  <li>
+  <p style="margin-left: -4">Supralingual cavity&nbsp; </li>
+  <li>
+  <p style="margin-left: -4">Channel 1</li>
+  <li>
+  <p style="margin-left: -4">Channel 2</li>
+</ul>
+<p style="margin-left: -4; margin-top: -5">User can edit area function data for 
+each part , by selecting the popmenu list as shown in the following figures.</p>
+<p style="margin-left: -4; margin-top: -5"><b>Number of&nbsp; Lateral Channle(s) 
+
+</b>:&nbsp; If &nbsp;<b>Number of&nbsp; Lateral Channle(s)</b> = 1,&nbsp; only 
+area function in plot Channel<sub>1</sub> used for calculation,&nbsp; area 
+function for Channel 2 will be neglected.</p>
+<p style="margin-left: -4"><b>Supralingual cavity On/Off</b>:&nbsp; If&nbsp; Off 
+is selected, supralingual cavity will not be included in the calculation of 
+acoustic response</p>
+<p style="line-height: 150%">&nbsp;</p>
+<p><span style="font-size: 12.0pt; font-family: Times New Roman"><!--[if gte vml 1]><v:shape
+ id="_x0000_s1033" type="#_x0000_t75" style='width:657pt;height:474pt'>
+ <v:imagedata src="model_files/image011.png" o:title="" cropbottom="2258f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=876 height=632
+src="model_files/image012.jpg" v:shapes="_x0000_s1033"><![endif]></span></p>
+<p style="line-height: 150%">&nbsp;</p>
+<p style="line-height: 150%">&nbsp;</p>
+<p style="line-height: 150%"><b>Nasalized vowel<a name="nasalized"></a></b></p>
+<p style="line-height: 150%; margin-left: -4">The geometry for nasalized vowel 
+consists of (as shown in the schematic plot):</p>
+<ul>
+  <li>
+  <p style="margin-left: -4">&nbsp;Back cavity</li>
+  <li>
+  <p style="margin-left: -4">Oral cavity</li>
+  <li>
+  <p style="margin-left: -4">Velar tube</li>
+  <li>
+  <p style="margin-left: -4">Nostril1</li>
+  <li>
+  <p style="margin-left: -4">Nostril2&nbsp; </li>
+</ul>
+<p style="margin-left: -4; margin-top: -5">User can edit area function data for 
+each part , by selecting the popmenu list as shown in the following figure.</p>
+<p style="margin-left: -4; margin-top: -5"><b>Number of&nbsp; Nostril(s) 
+
+</b>:&nbsp; If&nbsp; <b>Number of&nbsp; Nostril(s)</b> = 
+
+1,&nbsp; only area function in plot Nostril<sub>1</sub> used for calculation</p>
+<p style="margin-left: -4; margin-top: -5"><b>Couple Area </b>:&nbsp;this data 
+is unused for calculation right now.</p>
+<p><span style="font-size: 12.0pt; font-family: Times New Roman"><!--[if gte vml 1]><v:shape
+ id="_x0000_s1029" type="#_x0000_t75" style='width:657pt;height:474pt'>
+ <v:imagedata src="model_files/image013.png" o:title="" cropbottom="2258f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=876 height=632
+src="model_files/image014.jpg" v:shapes="_x0000_s1029"><![endif]></span></p>
+<p style="line-height: 150%">&nbsp;</p>
+<p style="line-height: 150%"><b>Arbitrary<a name="arbitrary"></a></b></p>
+<ul>
+  <li>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">Category 
+'arbitrary'&nbsp; is to allow user specify&nbsp; geometry configuration flexibly 
+. The user can specify up to 30 tubes with area function for each tube and how 
+those tubes are connected . </p>
+
+  </li>
+</ul>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15"><span style="font-size: 12.0pt; font-family: Times New Roman"><!--[if gte vml 1]><v:shape
+ id="_x0000_s1036" type="#_x0000_t75" style='width:655.5pt;height:474.75pt'>
+ <v:imagedata src="model_files/image015.png" o:title="" cropbottom="2258f"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=874 height=633
+src="model_files/image016.jpg" v:shapes="_x0000_s1036"><![endif]></span></p>
+
+<ul>
+  <li>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">Each tube is 
+modeled as one single-channel&nbsp; module or two-channel&nbsp; module. </p>
+
+  </li>
+</ul>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+-&nbsp;&nbsp;&nbsp; single-channel&nbsp; module</p>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="model.1.gif" width="259" height="62">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+-&nbsp;&nbsp;&nbsp; two-channel&nbsp; module</p>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="model.2.gif" width="264" height="103">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+<ul>
+  <li>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">The geometry configuration 
+is modeled as a<b> tree structure (see <a href="#schematic_arbitrary">examples</a>) </b>
+
+with its root<b> </b>
+
+at the tube starting&nbsp; from glottis.  The sound source 
+for arbitrary is always at glottis. The air stream comes out from <b>nostril</b> 
+
+and/or <b>lips</b>. There are 3 modes&nbsp; specified for calculation of 
+acoustic response<b>&nbsp; 
+:</b></p>
+
+  </li>
+  <li>
+
+<p class="MsoNormal" style="margin-left: 21; margin-top: 0; margin-bottom: 9">
+<b>Oral mode:</b> output volume velocity&nbsp; is from lips</p>
+
+  </li>
+  <li>
+
+<p class="MsoNormal" style="margin-left: 21; margin-top: 0; margin-bottom: 9">
+<b>Nasal mode:</b> output volume velocity&nbsp; is from nostrils</p>
+
+  </li>
+  <li>
+
+<p class="MsoNormal" style="margin-left: 21; margin-top: 0; margin-bottom: 9">
+<b>Oral_Nasal mode: </b>&nbsp;output volume velocity&nbsp; is from both lips and 
+nostrils </p>
+
+  </li>
+</ul>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;</p>
+
+<ul>
+  <li>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">For each tube , 
+there are 9 or 12 fields needed to be specified&nbsp; in the configuration file 
+(Please take a look at the <a href="file.htm#arbitrary">examples</a> , and read 
+the file format&nbsp; of&nbsp; <b>
+<a href="file.htm#arbitrary">/vtar/areafunction/template3.are</a>
+
+</b>)</p>
+
+  </li>
+</ul>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+-&nbsp; No. of&nbsp; tube :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;indexOfBranch&gt;</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1-30&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp; Type of 
+module : <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;typeOfModule&gt;</i> TWOCHANNELS or SINGLECHANNEL (default)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp; Starting 
+point of tube: <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;typeOfStartofTube&gt;</i> GLOTTIS/INTERMEDIATE or just empty (default)&nbsp;&nbsp;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp; Ending 
+point of tube: <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;typeOfEndofTube&gt;</i> LIPS/NOSTRIL1/NONSTRIL2/ or just empty(default) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp; No. of 
+children tubes in the tree structure of geometry:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;nextBranches&gt;</i> 1 2 
+3 (maximum number of braches is 10)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp; Location of 
+Children tubes in the order of <i>&lt;nextBranches&gt;</i>:&nbsp;&nbsp; <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;nextBranchesLocation&gt;</i> Location value /CHANNEL1 Location value/CHANNEL2 
+Location value/ or END(default)&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Number of 
+sections : <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;numOfSections&gt;&nbsp;&nbsp;&nbsp; </i><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Length of 
+sections&nbsp;&nbsp; : <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;secLen&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</i><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Area&nbsp;&nbsp;&nbsp; 
+of sections&nbsp;&nbsp; : <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;secArea&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</i><br>
+&nbsp;</p>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+If &lt;typeOfModule&gt; is TWOCHANNELS , 3 more lines for channel 2</p>
+
+  <p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  - Number of sections : <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &lt;numOfSections&gt;&nbsp;&nbsp;&nbsp; </i><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Length of 
+  sections&nbsp;&nbsp; : <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &lt;secLen&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </i><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Area&nbsp;&nbsp;&nbsp; 
+  of sections&nbsp;&nbsp; : <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &lt;secArea&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </i><br>
+&nbsp;</p>
+<p></p>
+<ul>
+  <li>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">This diagram below 
+is the interface for input area function for each tube. The user can specify the 
+geometry information through it . </p>
+
+  </li>
+</ul>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="model.7.gif" width="507" height="507"></p>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;</p>
+
+<ul>
+  <li>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">The following 
+schematics are examples in category 'arbitrary' to model nasal sound, rhotic /r/ 
+sound and lateral /l/ sound&nbsp;&nbsp; respectively.<a name="schematic_arbitrary"></a></p>
+
+  </li>
+</ul>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+-&nbsp;&nbsp; Schematic of an example to model a nasal sound (see&nbsp;
+<a href="matlab: global VT ; edit(fullfile(VT.vtarPath,'areafunction',   'arbitrary',   'M.ARE'));">&nbsp;/vtar/areafunction/arbitrary/M.ARE</a>) </p>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="model.3.gif" width="604" height="231"></p>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+-&nbsp;&nbsp; Schematic of an example to model a rhotic /r/ sound&nbsp; (see 
+<a href="matlab:   global   VT   ;   edit(fullfile(VT.vtarPath,'areafunction',   'arbitrary',   'rhotic.ARE'));">&nbsp;/vtar/areafunction/arbitrary/rhotic.ARE</a>)&nbsp;&nbsp; </p>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="model.4.gif" width="582" height="199"></p>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+-&nbsp;&nbsp; Schematic of an example to model a lateral /l/ sound&nbsp; (see 
+<a href="matlab:   global   VT   ;   edit(fullfile(VT.vtarPath,'areafunction',   'arbitrary',   'lateral.ARE'));">&nbsp;/vtar/areafunction/arbitrary/lateral.ARE</a>)</p>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="model.5.gif" width="582" height="218"></p>
+
+<p class="MsoNormal" style="margin-top: 0; margin-bottom: 15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
+  </body>
+
+</html>

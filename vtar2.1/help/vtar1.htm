@@ -1,0 +1,393 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+
+<meta name="ProgId" content="FrontPage.Editor.Document">
+
+
+
+<title>VTAR</title>
+
+<style>
+
+<!--
+
+ li.MsoNormal
+
+	{mso-style-parent:"";
+
+	margin-bottom:.0001pt;
+
+	font-size:12.0pt;
+
+	font-family:"Times New Roman";
+
+	margin-left:0in; margin-right:0in; margin-top:0in}
+
+-->
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<p class="MsoNormal" align="center" style="text-align:center">&nbsp;</p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b>
+
+<span style="font-size:14.0pt">VTAR</span><font size="4"> - Vocal Tract Acoustic Response Calculation</font></b></p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height: 150%; margin-top: 8"><b><font size="4">
+<a href="#introduction">Introduction</a></font></b></p>
+
+<p class="MsoNormal" style="line-height: 150%; margin-top: 8"><b><font size="4">
+<a href="overview.htm">Overview of VTAR </a></font></b><a href="overview.htm">
+<font size="4"><b>interface window</b></font></a></p>
+
+<p class="MsoNormal" style="line-height: 150%; margin-top: 8" align="left"><b>
+<font size="4"><a href="#start">Start and quit VTAR</a></font></b></p>
+
+<p class="MsoNormal" style="line-height: 150%; margin-top: 8" align="left">
+<a href="model.htm"><font size="4"><b>Vocal tract model</b></font></a><b><font size="4"><a href="model.htm">s 
+and area function settings</a></font></b></p>
+
+<p class="MsoNormal" style="line-height: 150%; margin-top: 8" align="left"><b>
+<font size="4"><a href="#acoustic">Acoustic response calculation</a></font></b></p>
+
+<p class="MsoNormal" style="line-height: 150%; margin-top: 8" align="left">
+<a href="file.htm"><font size="4"><b>Area function i</b></font></a><font size="4"><b><a href="file.htm">nput 
+from file</a></b></font></p>
+
+<p class="MsoNormal" style="line-height: 150%; margin-top: 8" align="left">
+<a href="file.htm"><font size="4"><b>Area function data collected from MRI</b></font></a></p>
+
+<p class="MsoNormal" style="line-height: 150%; margin-top: 8" align="left">
+<font size="4"><b><a href="file.htm">Save and output</a></b></font></p>
+
+<p class="MsoNormal" style="line-height: 150%; margin-top: 8" align="left">
+<a href="others.htm"><font size="4"><b>Wall and fluid property setup and o</b></font></a><b><font size="4"><a href="others.htm">ther 
+configurations</a></font></b></p>
+
+<p class="MsoNormal" style="line-height: 150%; margin-top: 8" align="left">
+<font size="4"><b><a href="ASA2007VTAR_Poster_v6.pdf">New features in VTAR 2.0</a></b></font></p>
+
+<p class="MsoNormal" style="line-height: 150%; margin-top: 8"><b><font size="4">
+<a href="#contact">Contact Information</a></font></b></p>
+
+<p class="MsoNormal" style="line-height: 150%; margin-top: 8"><b><font size="4">
+<a href="#reference">Reference</a></font></b></p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><b><font size="4">Introduction<a name="introduction"></a></font></b></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: .5in; text-autospace: none">
+
+VTAR is a Matlab-based computer program for vocal tract acoustic response calculation. Based on a frequency-domain vocal tract model <b>
+<a href="#reference">[1]</a></b>, VTAR is able to model&nbsp; various 
+
+complex sounds such as nasals, rhotics and liquids.&nbsp; With input in the form of 
+
+vocal tract cross-sectional area functions, VTAR calculates the vocal tract 
+
+acoustic response function, formant frequencies, and bandwidths.&nbsp; The 
+
+user-friendly interface allows flexible and directed data input for defined categories: 
+
+vowels, consonant, nasals, nasalized sounds, rhotics, and&nbsp; laterals.<span style="font-size: 12.0pt; font-family: Times New Roman"><b>&nbsp;</b></span></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: .5in; text-autospace: none">
+
+<span style="font-size: 12.0pt; font-family: Times New Roman">Several new 
+features are included in <a href="ASA2007VTAR_Poster_v6.pdf">VTAR 2.0</a>, the 
+latest version, which include: (1) acoustic sensitivity function calculation for 
+formants, (2) area function modification for targeted formant pattern, (3) 
+susceptance plot calculation, which is useful particularly for nasalized vowel 
+analysis, (4) speech sound synthesis with source model options, and (5) addition 
+of a new set of area function data for liquid sounds extracted from MR (Magnetic 
+Resonance) images. These new features along with the user-friendly interface 
+significantly enhance the usability of VTAR for both teaching and research 
+purposes.<br>
+&nbsp;</span></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: .5in; text-autospace: none">
+
+<span style="font-size: 12.0pt; font-family: Times New Roman">&nbsp;VTAR 
+has been tested in<b> Matlab 6.5 </b>on<b> Windows.</b></span></p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: .5in; text-autospace: none">
+
+&nbsp;</p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: .5in; text-autospace: none">
+
+&nbsp;</p>
+
+<p class="MsoNormal" style="text-align: justify; text-indent: .5in; text-autospace: none">
+
+&nbsp;</p>
+
+<p class="MsoNormal" style="line-height: 150%" align="left"><b><font size="4">
+<a href="overview.htm">Overview of VTAR interface window</a></font></b></p>
+
+<p class="MsoNormal" style="line-height: 150%" align="left">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height: 150%" align="left"><b><font size="4">
+Start and quit VTAR<a name="start"></a></font></b></p>
+
+<p class="MsoNormal" style="line-height: 150%" align="left"><font size="4"><b>&nbsp;&nbsp;&nbsp;
+</b></font><b>Start:</b></p>
+
+<ul>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 16">Start Matlab</p>
+
+  </li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 16">Set VTAR directory 
+'... <b>/vtar</b>' as current&nbsp; directory 
+or add it into search path of Matlab (<b>addpath('.../vtar')</b>)</p>
+
+  </li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 16">In Matlab command 
+window, type in '<b>vtar</b>' and enter.</p>
+
+  </li>
+</ul>
+
+<p class="MsoNormal" align="left"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Quit:</b></p>
+
+<ul>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 16">Press button
+<img border="0" src="overvi15.gif" width="68" height="25">&nbsp; or select Exit 
+VTAR from the File menu in the user interface</p>
+
+  </li>
+</ul>
+
+<p class="MsoNormal" align="left">&nbsp;</p>
+
+<p class="MsoNormal" align="left"><a href="model.htm"><font size="4"><b>Vocal 
+tract models</b></font></a><b><font size="4"><a href="model.htm"> and area 
+function settings</a></font></b></p>
+
+<p class="MsoNormal" align="left">&nbsp;</p>
+
+<p class="MsoNormal" align="left"><b><font size="4">Acoustic response 
+calculation<a name="acoustic"></a></font></b></p>
+
+<ul>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 16; margin-bottom: 10">To 
+calculate acoustic response, press button&nbsp;
+<img border="0" src="overvi14.gif" width="29" height="31"> at toolbar&nbsp; or 
+button <img border="0" src="overvi18.gif" width="63" height="24"> at the bottom 
+of interface</p>
+
+  </li>
+</ul>
+
+<p class="MsoNormal" align="left" style="margin-left: 16; margin-bottom: 10">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height: 150%"><font size="4"><b>
+<a href="file.htm">Input from file</a></b></font></p>
+
+<p class="MsoNormal" style="text-indent: in; line-height:200%" align="left">
+The area function can also be loaded from file.&nbsp; In the input file, users 
+specify sound category, vocal tract geometry configuration, number of sections 
+and corresponding area functions, and other related information.&nbsp; Sample input files are given below:</p>
+
+  <ul>
+  <li>
+
+<p class="MsoNormal" align="left">Area function (.ARE) for 
+<a href="model.htm#modify_area">one section</a> (see<a href="matlab: global VT ; edit(fullfile(VT.vtarPath,'areafunction', 'template1.are'));"> 
+/vtar/areafunction/template1.are</a>)</p>
+
+  </li>
+  <li>
+
+<p class="MsoNormal" align="left">Area function (.ARE) for 
+<a href="model.htm#model_selection">one sound</a> (see<a href="matlab: global VT ; edit(fullfile(VT.vtarPath,'areafunction', 'template2.are'));"> 
+  /vtar/areafunction/template2.are</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+<a href="model.htm#vowel">Vowel</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see example
+<a href="matlab:  global  VT  ;  edit(fullfile(VT.vtarPath,'areafunction','vowel',  'EY.ARE'));">&nbsp;/vtar/areafunction/vowel/EY.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+<a href="model.htm#consonant">Fricative</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see example
+<a href="matlab:  global  VT  ;  edit(fullfile(VT.vtarPath,'areafunction',  'consonant',  'Example_1.ARE'));">&nbsp;/vtar/areafunction/consonant/Example_1.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+<a href="model.htm#nasals">Nasal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see example
+<a href="matlab:  global  VT  ;  edit(fullfile(VT.vtarPath,'areafunction',  'nasal',  'M.ARE'));">&nbsp;/vtar/areafunction/nasal/M.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+<a href="model.htm#rhotic">Rhotic /r/ </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (see 
+example
+<a href="matlab:  global  VT  ;  edit(fullfile(VT.vtarPath,'areafunction',  '_r',  'Example_1.ARE'));">&nbsp;/vtar/areafunction/_l/Example_1.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+<a href="model.htm#lateral">Lateral /l/</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see example
+<a href="matlab:  global  VT  ;  edit(fullfile(VT.vtarPath,'areafunction',  '_l',  'Example_1.ARE'));">&nbsp;/vtar/areafunction/_r/Example_1.ARE</a>)</li>
+</ul>
+
+  <p class="MsoNormal" style="text-indent: 0in; line-height: 200%; margin-left: in">
+  VTAR also allows input of area function for<a href="model.htm#arbitrary"> arbitrary</a> 
+  vocal tract geometry. Samples of arbitrary vocal tract area function input 
+  file are given below:<ul>
+  <li>
+  <p class="MsoNormal" style="text-indent: 0in; line-height: 150%; margin-left: in">
+  Arbitrary area function input file (<a href="matlab: global VT ; edit(fullfile(VT.vtarPath,'areafunction', 'template3.are'));">/vtar/areafunction/template3.are</a> 
+  )</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+Example of arbitrary area function input file for
+<a href="model.htm#vowel">Vowel</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see&nbsp;
+<a href="matlab:  global  VT  ;  edit(fullfile(VT.vtarPath,'areafunction','arbitrary',  'vowel.ARE'));">&nbsp;/vtar/areafunction/arbitrary/vowel.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+Example of arbitrary area function input file for
+<a href="model.htm#nasals">Nasal</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see&nbsp;
+<a href="matlab: global VT ; edit(fullfile(VT.vtarPath,'areafunction',   'arbitrary',   'M.ARE'));">&nbsp;/vtar/areafunction/arbitrary/M.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+Example of arbitrary area function input file for
+<a href="model.htm#rhotic">Rhotic /r/ </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (see 
+<a href="matlab:   global   VT   ;   edit(fullfile(VT.vtarPath,'areafunction',   'arbitrary',   'rhotic.ARE'));">&nbsp;/vtar/areafunction/arbitrary/rhotic.ARE</a>)</li>
+  <li>
+
+<p class="MsoNormal" align="left" style="margin-left: 50">
+Example of arbitrary area function input file for
+<a href="model.htm#lateral">Lateral /l/</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(see 
+<a href="matlab:   global   VT   ;   edit(fullfile(VT.vtarPath,'areafunction',   'arbitrary',   'lateral.ARE'));">&nbsp;/vtar/areafunction/arbitrary/lateral.ARE</a>)</li>
+</ul>
+
+<p class="MsoNormal" style="line-height: 150%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height: 150%"><font size="4"><b>
+<a href="file.htm">Save and output</a></b></font></p>
+
+<p class="MsoNormal" style="text-indent: in; margin-left: 0.4in; line-height:150%">
+To save the results, click the 'save' button at the bottom left of the interface 
+window, or go to menu 'file-save'. A dialog window will appear and save the 
+results in a '.mat' file.&nbsp; Specifically, the frequency and acoustic 
+response 
+are saved in VTsaved.f and VTsaved.AR, respectively.&nbsp; The result is also 
+saved in a text file with the same name.&nbsp; A sample results file is given 
+below:</p>
+
+<ul>
+  <li>
+  <p class="MsoNormal" style="text-indent: 0in; line-height: 150%; margin-left: in">
+  Saved area function , acoustic response and other setting ( see /vtar/areafunction/savedexample1.mat 
+  and
+  <a href="matlab: global VT ; edit(fullfile(VT.vtarPath,'areafunction', 'savedexample1.txt'));">
+  savedexample1.txt</a> ) </li>
+</ul>
+
+<p class="MsoNormal" style="line-height: 150%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height: 150%"><a href="others.htm">
+<font size="4"><b>Wall and fluid property setup and o</b></font></a><b><font size="4"><a href="others.htm">ther 
+configurations</a></font></b></p>
+
+<p class="MsoNormal" style="line-height: 150%">&nbsp;</p>
+
+<p class="MsoNormal" style="line-height: 150%"><b><font size="4">Contact 
+Information<a name="contact"></a></font></b></p>
+
+<p style="margin-left:27.0pt">Email: <a href="mailto:espy@glue.umd.edu">
+
+<span style="color: #3333FF; text-decoration: underline">vtar</span></a><a href="mailto:espy@glue.umd.edu" style="color: #3333FF; text-decoration: underline; text-underline: single">@isr.umd.edu</a></p>
+
+<p style="margin-left:0pt">&nbsp;</p>
+
+<p style="margin-left:0pt"><b><font size="4">Reference</font><a name="reference"></a></b></p>
+
+<p style="margin-left:27.0pt"> <b>[1] Zhaoyan Zhang, Carol Espy-Wilson</b>, 
+2004, &quot;A 
+vocal tract model of American English /l/&quot;, the Journal of the Acoustical 
+Society of America, 115(3), 1274-1280.</p>
+
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+<p style="margin-left: 27.0pt">&nbsp;</p>
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,38 @@
+[
+12-Jul-2004 16:30:45
+
+ comments are added here
+ this is a saved file for area function and also other information on vocal tract modelling 
+ The first parts are similiar to area function file, but this file also includes formants and property of fluid information
+]
+
+ Category_Selection: 1 
+Model_Selection: 1 
+
+[1] Vowel 
+
+18 
+1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
+2.56         1.44            8            7            5          1.4         1.65          1.4          2.3         2.56            4         5.67         7.84         10.3         10.3         10.3            8            4 
+
+Property of fluid: 
+RHO  0.00114               % Air density (Unit: g/cm^3) 
+MU   0.000186              %  Air viscosity (Unit: dyne.s/cm^2 ) 
+C0   35000                 %  Sound speed in air (Unit: cm/s) 
+CP   0.24                  %  Specific heat of air (Unit: cal/g.k) 
+LAMDA5.5e-005              % Heat conduction of helium  (Unit: cal/s.cm.k) 
+ETA  1.4                   % adiabatic constant 
+
+Property of wall: 
+WALL_L 1.5                % Wall mass per unit length (Unit: g/cm) 
+WALL_R 1600                % Wall resistance (Unit: dyne.s/cm^2) 
+WALL_K 300000              % Wall stiffness (Unit: dyne/cm^2) 
+Radiation:  On       
+
+
+Formant      frequency(Hz)     amplitude(dB)     bandwith(Hz)
+F1            510            25.7571            34
+F2            1017            21.9727            40
+F3            2536            14.745            56
+F4            3434            23.3929            48
+F5            3871            17.2404            91

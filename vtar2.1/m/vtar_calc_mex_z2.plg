@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: vtar_calc_mex_z2 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ZXINHU~1.AVW\LOCALS~1\Temp\RSPC0.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/vtar_calc_mex_z2.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\zxinhui.AVW3105B\Desktop\vtar2.1\m\vtar_calc_mex_z2.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ZXINHU~1.AVW\LOCALS~1\Temp\RSPC0.tmp" 
+<h3>Output Window</h3>
+Compiling...
+vtar_calc_mex_z2.cpp
+c:\documents and settings\zxinhui.avw3105b\desktop\vtar2.1\m\vtar_calc_mex_z2.cpp(121) : fatal error C1083: Cannot open include file: 'mex.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+vtar_calc_mex_z2.obj - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
